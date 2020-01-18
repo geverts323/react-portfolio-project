@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'typeface-acme';
+import 'typeface-calistoga';
+import 'font-awesome/css/font-awesome.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

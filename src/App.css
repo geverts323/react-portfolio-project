@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+* {
+    font-family: "Acme", cursive;
+    /* background-color: #d19136; */
+    color: grey;
+    background-image: url('images/seamless_wood5.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+    font-family: "Calistoga", cursive;
+    font-weight: bolder;
+    font-size: 2em;
+    color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 3em;
+     color: #1b751e;
+}
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    /* background-image: linear-gradient(to right, rgb(202, 154, 22), rgb(82, 83, 19), rgb(77, 32, 7)); */
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nobg {
+  background-image: none;
 }
