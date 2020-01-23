@@ -2,7 +2,7 @@
     font-family: "Acme", cursive;
     /* background-color: #d19136; */
     color: grey;
-    background-image: url('images/seamless_wood5.jpg');
+    background-image: url('/assets/images/seamless_wood5.jpg');
 }
 
 h1, h2, h3 {
@@ -16,6 +16,7 @@ h1 {
     font-size: 3em;
      color: #1b751e;
 }
+
 .jumbotron {
     margin: 0;
     padding: 30px;
@@ -25,4 +26,13 @@ h1 {
 
 .nobg {
   background-image: none;
+}
+
+.navBorder {
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
+}
+
+.nav-link {
+    color: #1b751e;
 }
