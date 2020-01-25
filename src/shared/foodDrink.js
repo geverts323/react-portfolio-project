@@ -4,7 +4,7 @@ export const FOOD_DRINKS = {
             id: 0,
             featured: true,
             name: "Fried pickles",
-            ingredients: "Vodka and Orange Juice",
+            ingredients: "Pickles, Breading, Cooked in Peanut Oil",
             price: "$5.50",
             image: "assets/images/fried_pickles.jpg"
         }

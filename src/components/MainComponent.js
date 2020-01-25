@@ -32,8 +32,8 @@ class Main extends Component {
                             gamesObj={this.state.gamesObj} 
                         />} 
                     />
-                    <Route path='/foodndrink' component={FoodDrink} />
-                    <Route path='/games' component={Games} />
+                    <Route path='/foodndrink' render={() => <FoodDrink foodDrinkObj={this.state.foodDrinkObj}/>} />
+                    <Route path='/games' render={() => <Games gamesObj={this.state.gamesObj}/>} />
                     <Route path='/contactus' component={Contact} />
                     <Redirect to='/home' />
                 </Switch>

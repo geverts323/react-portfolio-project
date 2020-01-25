@@ -9,7 +9,7 @@ h1, h2, h3 {
     font-family: "Calistoga", cursive;
     font-weight: bolder;
     font-size: 2em;
-    color: grey;
+    color: black;
 }
 
 h1 {
@@ -20,18 +20,19 @@ h1 {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    /* background-image: linear-gradient(to right, rgb(202, 154, 22), rgb(82, 83, 19), rgb(77, 32, 7)); */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    border-bottom: 2px solid black;
 }
 
 .nobg {
   background-image: none;
 }
 
-.navBorder {
+/* .navBorder {
     border-top: black solid 3px;
     border-bottom: black solid 3px;
-}
+} */
 
 .nav-link {
     color: #1b751e;
@@ -69,4 +70,16 @@ h1 {
 
 .requestButton {
     margin-left: 2em;
+}
+
+.gameMenuCard {
+    margin-top: 2em;
+}
+
+.gamesTitleRow {
+    margin-top: 2em;
+}
+
+.navBarStyle {
+    background-color: rgba(0, 0, 0, 0.5);
 }

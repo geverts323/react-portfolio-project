@@ -36,7 +36,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-                <Navbar dark sticky="top" expand="md">
+                <Navbar dark sticky="top" expand="md" className="navBarStyle">
                     <div className="container navBorder">
                         <NavbarBrand className="mr-auto" href="/">
                             <img src="../assets/images/logo2.png" height="30" width="30" alt="Game Bar Logo"/>

@@ -1,5 +1,33 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card, CardBody, Button, Modal, ModalBody, ModalHeader, Label, Form, FormGroup, Input } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, Button, 
+    Modal, ModalBody, ModalHeader, Label, Form, FormGroup, Input, 
+    UncontrolledCollapse, CardColumns, CardTitle, CardText } from 'reactstrap';
+
+
+function RenderGameMenu({gamesObj}) {
+    const gameCards = gamesObj.map(game => {
+        return(
+            <Card className="gameMenuCard">
+                <CardBody id={"#gameNum" + game.id}>
+                    <CardTitle className="myGreen">{game.name}</CardTitle>
+                    <CardColumns>Number of Players: {game.numPlayers}</CardColumns>
+                    <CardColumns> Stock: {game.quantity}</CardColumns>
+                    <hr/>
+                    <CardText>{game.description}</CardText>
+                    {/* <UncontrolledCollapse toggler={"#gameNum" + game.id}>
+                        <CardText>{game.description}</CardText>
+                    </UncontrolledCollapse> */}
+                </CardBody>
+            </Card>
+        );
+    });
+
+    return(
+        <React.Fragment>
+            {gameCards}
+        </React.Fragment>
+    );
+}
 
 class Games extends Component {
 
@@ -39,7 +67,10 @@ class Games extends Component {
     render() {
         return(
             <Container>
-                <Row>
+                <Row className="gamesTitleRow">
+                    <Col className="align-self-center">
+                        <h3>Games and Resources</h3>
+                    </Col>
                     <Col>
                         <Card>
                             <CardBody>
@@ -50,7 +81,7 @@ class Games extends Component {
                     </Col>
                 </Row>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Request a Game*</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal}>Request a Game</ModalHeader>
                     <ModalBody>
                         <Form model="requestForm" onSubmit={values => this.handleSubmit(values)}>
                             <FormGroup>
@@ -75,6 +106,11 @@ class Games extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
+                <Row>
+                    <Col>
+                        <RenderGameMenu gamesObj={this.props.gamesObj}/>
+                    </Col>
+                </Row>
             </Container>
         );
     }
